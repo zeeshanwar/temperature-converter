@@ -6,11 +6,10 @@
 
 body {
      /* background: teal; */
-     background: linear-gradient(
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5),
-     ),
-     url('images/milad-fakurian-E8Ufcyxz514-unsplash.jpg');
+     background: linear-gradient(rgba(0, 0, 0, 0.5),
+               rgba(0, 0, 0, 0.5),
+          ),
+          url('images/milad-fakurian-E8Ufcyxz514-unsplash.jpg');
      background-size: cover;
      // background-blend-mode: soft-light;
      margin: 0;
@@ -25,21 +24,6 @@ body {
      padding: 0;
 }
 
-/* .bodycontainer::before{
-     content: ' ';
-     display: block;
-     position: absolute;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;
-     opacity: 0.6;
-     background-image: url('images/pexels-mitchell-luo-3645123.jpg');
-     background-repeat: no-repeat;
-     background-position: 50% 0;
-     background-size: cover;
-} */
-
 .pagebody {
      /* background: cornsilk;
      border: 3px solid red; */
@@ -52,147 +36,247 @@ body {
 
 }
 
-.heading {}
+.heading {
 
-h1 {
-     color: #520D80;
-     display: inline-block;
-     background: cornsilk;
-     position: sticky;
-     top: 0;
-     right: 0;
-     padding: 20px;
-     border-radius: 36px;
-     border: 3px solid #520D80;
-     font-family: 'Laila', sans-serif;
-     font-weight: bolder;
-     font-size: 50px;
+     h1 {
+          color: #520D80;
+          display: inline-block;
+          background: cornsilk;
+          position: sticky;
+          top: 0;
+          right: 0;
+          padding: 20px;
+          border-radius: 36px;
+          border: 3px solid #520D80;
+          font-family: 'Laila', sans-serif;
+          font-weight: bolder;
+          font-size: 50px;
 
-     /* text-decoration-style: 2px solid black; */
-     /* text-underline-offset: 8px; */
-     /* text-decoration: underline solid #520D80 5px;
-     text-underline-position: under; */
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: black;
 
-     -webkit-text-stroke-width: 1px;
-     -webkit-text-stroke-color: black;
+          border-bottom: 8px solid #520D80;
 
-     border-bottom: 8px solid #520D80;
+     }
 
-     /* text-shadow: 0 0 5px #FF0000, 0 0 3px #00FF00; */
-
-     /* text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000; */
 }
 
 .container {
      background: lavender;
      background: rgb(230, 230, 250, 0.8);
      margin: 10px;
-     padding: 40px 10px 20px 10px;
+     // padding: 40px 10px 20px 10px;
+     padding: 40px;
      // width: 40%;
      border: 3px solid darkgoldenrod;
      border-radius: 20px;
 }
 
-input {
-     background: seashell;
-     border: 3px ridge silver;
-     border-radius: 5px;
-     padding: 5px;
+.temptitle {
      margin: 5px;
-     width: 10%;
+     text-align: left;
 }
 
-.semsplit {
+.tempinput {
+     display: flex;
+     gap: 10px;
+}
+
+.tempdegree {
+     flex-basis: 50%;
+     // border: 1px solid red;
+     text-align: left;
+}
+
+.tempunit {
+     flex-basis: 50%;
+     // border: 1px solid green;
+}
+
+#unitbox {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 50%;
+
+}
+
+.tempradio {
+     font-size: 22px;
+     scale: 1.5;
+}
+
+.tempinputbox {
+     background: seashell;
+     background: inherit;
+     // border: 3px ridge silver;
+     border: none;
+     border-bottom: 1px solid black;
+     // border-radius: 5px;
+     font-size: 15px;
+     padding: 10px;
+     margin: 5px 0px;
      width: 80%;
 }
 
-.resultsplit {
-     width: 100%;
+.unitoptions {
+     display: block;
+     text-align: left;
 }
 
 
-.resultcontainer {
-     background-color: rgb(255, 192, 203, 0.8);
-     display: none;
-     text-align: center;
-     margin: 10px;
-     padding: 50px;
-     width: 66vh;
-     /* height: 77vh; */
-     border: 3px solid darkgoldenrod;
-     border-radius: 20px;
+.calltoaction {
+     margin: 5vh 0px;
 }
 
-.extraresult {
-     /* border: 3px solid green;
-     border-radius: 10px; */
-     padding: 20px;
-}
-
-.extraresult::after {
-     /* content: "<hr class="resultsplit">"; */
-     /* content: " . ";
-     border: 3px solid blue; */
-}
-
-#submitarea {
-     padding: 10px;
-     /* margin: 10px; */
-}
-
-#submit {
+#submitbtn {
      background: plum;
      font-family: 'Ubuntu', sans-serif;
      font-weight: bolder;
      padding: 10px;
      border-radius: 5px;
      border: 2px groove black;
-     display: none;
+     // display: none;
      /* opacity: 0; */
 }
 
-#submit:hover {
-     background: orchid;
+// <!-- HTML !-->
+// <button class="button-36" role="button">Button 36</button>
+
+/* CSS */
+.submitbtn {
+     background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+     border-radius: 8px;
+     border-style: none;
+     box-sizing: border-box;
+     color: #FFFFFF;
      cursor: pointer;
-}
+     flex-shrink: 0;
+     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+     height: 4rem;
+     padding: 0 1.6rem;
+     text-align: center;
+     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+     transition: all .5s;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
 
-#reset {
-     background: tan;
-     display: none;
-     margin: 10px;
-     padding: 6px;
-     font-family: 'Ubuntu', sans-serif;
-     font-size: 12px;
-     font-weight: bold;
-     border-radius: 10px;
-     border: 1px groove black;
-
-}
-
-#reset:hover {
-     /* background-color: sienna; */
-     background-color: bisque;
-     cursor: pointer;
-}
-
-#resetarea {
-     align-items: center;
-}
-
-
-
-@media screen and (max-width: 800px) {
-     .container {
-          width: 80%;
-     }
-
-     input {
-          width: 20%;
+     &:hover {
+          box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+          transition-duration: .1s;
      }
 }
+
+.submitbtn:hover {}
+
+@media (min-width: 768px) {
+     .submitbtn {
+          padding: 0 2.6rem;
+     }
+}
+
+
+
+.resultcontainer {
+     text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .semsplit {
+//      width: 80%;
+// }
+
+// .resultsplit {
+//      width: 100%;
+// }
+
+
+// .resultcontainer {
+//      background-color: rgb(255, 192, 203, 0.8);
+//      display: none;
+//      text-align: center;
+//      margin: 10px;
+//      padding: 50px;
+//      width: 66vh;
+//      /* height: 77vh; */
+//      border: 3px solid darkgoldenrod;
+//      border-radius: 20px;
+// }
+
+// .extraresult {
+//      /* border: 3px solid green;
+//      border-radius: 10px; */
+//      padding: 20px;
+// }
+
+// .extraresult::after {
+//      /* content: "<hr class="resultsplit">"; */
+//      /* content: " . ";
+//      border: 3px solid blue; */
+// }
+
+// #submitarea {
+//      padding: 10px;
+//      /* margin: 10px; */
+// }
+
+
+
+// #submit:hover {
+//      background: orchid;
+//      cursor: pointer;
+// }
+
+// #reset {
+//      background: tan;
+//      display: none;
+//      margin: 10px;
+//      padding: 6px;
+//      font-family: 'Ubuntu', sans-serif;
+//      font-size: 12px;
+//      font-weight: bold;
+//      border-radius: 10px;
+//      border: 1px groove black;
+
+// }
+
+// #reset:hover {
+//      /* background-color: sienna; */
+//      background-color: bisque;
+//      cursor: pointer;
+// }
+
+// #resetarea {
+//      align-items: center;
+// }
+
+
+
+// @media screen and (max-width: 800px) {
+//      .container {
+//           width: 80%;
+//      }
+
+//      input {
+//           width: 20%;
+//      }
+// }
+
+
+
 
 
 

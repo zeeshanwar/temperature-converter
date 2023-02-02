@@ -1,90 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Tempreature Converter</title>
+     
+     <title>
+          Tempreature Converter
+     </title>
+
+
      <script src="script.js" defer></script>
+
      <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
 
      <div class="bodycontainer">
 
 
-               <div class="heading">
+          <div class="heading">
+               <h1>Tempreature Converter</h1>
+          </div>
 
-                    <h1>Tempreature Converter</h1>
+          <div class="pagebody">
 
-               </div>
+               <div class="container">
 
-               <div class="pagebody">
+                    <div class="tempinput">
 
-                         <!-- <div class="username">
-                              Please enter your name: <input type="text">
+                         <div class="tempdegree">
+                              <div class="temptitle">
+                                   Degrees
+                              </div>
+                              <input class="tempinputbox" id="tempinput">
+                         </div>
+
+                         <div class="tempunit">
+                              <div class="temptitle">
+                                   Unit
+                              </div>
+                              <div id="unitbox">
+                                   <div class="unitoptions">
+                                        <input type="radio" name="tempreature-unit" id="tempcelcius" class="tempradio" value="Celcius"> °C &nbsp;
+                                   </div>
+                                   <div class="unitoptions">
+                                        <input type="radio" name="tempreature-unit" id="tempfarenheit" class="tempradio" value="Farenheit"> °F &nbsp;
+                                   </div>
+                              </div>
+                         </div>
+
+
+                         <!-- <div id="resetarea" class="sembody">
+
+                              <button type="reset" title="Reset" id="reset">Reset</button> <br>
+
                          </div> -->
 
-                         <div class="container">
-                         
-                              <div class="semnos">
-                                   Enter number of Semesters: <input id="noofsems" title="Enter no. of Semesters">
-                                   <br>
-
-                                   <div id="resetarea" class="sembody">
-
-                                        <button type="reset" title="Reset" id="reset">Reset</button> <br>
-
-                                   </div>
+                    </div>
 
 
-                              </div>
-                              
+                    <div class="calltoaction">
+                         <button type="submit" id="submit" class="submitbtn"> Convert </button>
+                    </div>
 
-                              <div class="subcontainer" id="sembox">
+
+                    <div class="resultcontainer">
+
+
+                    <input class="tempinputbox" id="result" placeholder="Result" readonly>
+     
+     
+                    </div>
 
 
 
-                                   <div id="semscount" class="sembody">
-                                   
-                                   </div>
 
 
-                                   <div id="semscontainer" class="sembody">
 
-                                   </div>
-
-
-                                   <div id="submitarea">
-
-                                        <button id="submit" class="sembody"> Calculate </button>
-
-                                   </div>
+                    <!-- <div class="subcontainer" id="sembox">
 
 
-                              </div>
 
+                         <div id="semscount" class="sembody">
 
                          </div>
 
 
-                         <div class="resultcontainer">
-                              
-                              
-                              <div class="finalresult">
+                         <div id="semscontainer" class="sembody">
 
-                              </div>
-
-                              <div class="extraresult">
-                                   
-                              </div>
-
-                              
                          </div>
+
+
+                         <div id="submitarea">
+
+                              <button id="submit" class="sembody"> Calculate </button>
+
+                         </div>
+
+
+                    </div> -->
+
 
                </div>
+
+          </div>
 
      </div>
 
 </body>
+
 </html>
