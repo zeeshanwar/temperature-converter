@@ -4,6 +4,8 @@
 // let sembody = document.querySelectorAll('.sembody');
 
 
+let converterform = document.getElementById('converterform');
+
 let tempinput = document.getElementById('tempinput');
 
 let tempcelcius = document.getElementById('tempcelcius');
@@ -16,41 +18,71 @@ let resultcontainer = document.querySelector('.resultcontainer');
 
 let result = document.getElementById('result');
 
+let resultunit = document.getElementById('resultunit');
 
+let reset = document.getElementById('reset');
+
+
+// console.log(tempinput);
 // console.log(tempcelcius);
 // console.log(tempfarenheit);
-console.log(submit);
+// console.log(submit);
+// console.log(reset);
 // console.log(resultcontainer);
 // console.log(result);
+
 
 
 // tempinput.value = 20;
 
 // tempinput.addEventListener('change', numbercheck)
 
-function numbercheck() {
 
-     console.log((tempinput.value).length);
-     console.log((tempinput.value.trim()).length);
+     function inputcheck() {
 
-     if (isNaN(tempinput.value) || tempinput.value == "" || (tempinput.value.trim()).length == 0) {
-          alert("Invalid Input ❌ Please Try Again");
-          console.log("Invalid Input! Please enter an appropriate number");
+          tempreature = tempinput.value.trim();
+          console.log(tempreature);
+
+          console.log((tempinput.value).length);
+          console.log(tempreature.length);
+
+          if (isNaN(tempinput.value) || tempinput.value == "" || (tempreature).length == 0) {
+               alert("Invalid Input ❌ Please Try Again");
+               console.log("Invalid Input! Please enter an appropriate number");
+               converterform.reset();
+          }
+
+          else {
+
+               console.log("Input OK 👍");
+               console.log(tempinput.value);
+               console.log(tempreature);
+          }
      }
 
-     else {
 
-          console.log("Input OK 👍");
-          console.log(tempinput.value);
-          console.log(tempinput.value.trim());
+
+     function c2f() {
+
+          convertedresult = tempreature*(9/5)+32;
+          // F = C(9/5) + 32
+          resultunit.value = "°F"
      }
-}
+
+
+     function f2c() {
+
+          convertedresult = (tempreature-32)*(5/9);
+          // C = (F-32) (5/9)
+          resultunit.value = "°C"
+     }
+
 
 
 submit.addEventListener('click', () => {
 
 
-     numbercheck();
+     inputcheck();
 
      console.log('button clicked');
 
@@ -58,17 +90,27 @@ submit.addEventListener('click', () => {
 
      if (tempcelcius.checked == true) {
           console.log("celcius");
+          c2f();
+          
      }
      else if(tempfarenheit.checked == true){
           console.log("farenhiet");
+          f2c();
      }
      else if(tempcelcius.checked !== true || tempfarenheit.checked !== true){
-          // alert("Please enter a value and select a Unit");
           alert("Please select a Unit");
      }
 
 
-     result.value = tempinput.value.trim();
+     result.value = convertedresult.toFixed(1);
 
+
+
+})
+
+
+reset.addEventListener('click', ()=>{
+
+     converterform.reset();
 
 })

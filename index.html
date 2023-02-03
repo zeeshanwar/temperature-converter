@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
+
      <title>
           Tempreature Converter
      </title>
@@ -27,86 +27,69 @@
                <h1>Tempreature Converter</h1>
           </div>
 
+
           <div class="pagebody">
+
 
                <div class="container">
 
-                    <div class="tempinput">
 
-                         <div class="tempdegree">
-                              <div class="temptitle">
-                                   Degrees
-                              </div>
-                              <input class="tempinputbox" id="tempinput">
-                         </div>
+                    <form id="converterform" onsubmit="return false">
 
-                         <div class="tempunit">
-                              <div class="temptitle">
-                                   Unit
-                              </div>
-                              <div id="unitbox">
-                                   <div class="unitoptions">
-                                        <input type="radio" name="tempreature-unit" id="tempcelcius" class="tempradio" value="Celcius"> °C &nbsp;
+
+                         <div class="tempinputarea">
+
+                              <div class="tempdegree">
+                                   <div class="temptitle">
+                                        Degrees
                                    </div>
-                                   <div class="unitoptions">
-                                        <input type="radio" name="tempreature-unit" id="tempfarenheit" class="tempradio" value="Farenheit"> °F &nbsp;
+                                   <input class="tempinputbox" id="tempinput">
+                              </div>
+
+                              <div class="tempunit">
+                                   <div class="temptitle">
+                                        Unit
+                                   </div>
+                                   <div id="unitbox">
+                                        <div class="unitoptions">
+                                             <input type="radio" name="tempreature-unit" id="tempcelcius"
+                                                  class="tempradio" value="Celcius"> °C &nbsp;
+                                        </div>
+                                        <div class="unitoptions">
+                                             <input type="radio" name="tempreature-unit" id="tempfarenheit"
+                                                  class="tempradio" value="Farenheit"> °F &nbsp;
+                                        </div>
                                    </div>
                               </div>
-                         </div>
-
-
-                         <!-- <div id="resetarea" class="sembody">
-
-                              <button type="reset" title="Reset" id="reset">Reset</button> <br>
-
-                         </div> -->
-
-                    </div>
-
-
-                    <div class="calltoaction">
-                         <button type="submit" id="submit" class="submitbtn"> Convert </button>
-                    </div>
-
-
-                    <div class="resultcontainer">
-
-
-                    <input class="tempinputbox" id="result" placeholder="Result" readonly>
-     
-     
-                    </div>
-
-
-
-
-
-
-                    <!-- <div class="subcontainer" id="sembox">
-
-
-
-                         <div id="semscount" class="sembody">
 
                          </div>
 
 
-                         <div id="semscontainer" class="sembody">
+                         <div class="calltoaction">
+                              <button class="submitbtn" id="submit"> Convert </button>
+                         </div>
+
+
+                         <div class="resultcontainer">
+
+                              <input class="tempinputbox" id="result" placeholder="Result" readonly>
+                              <input class="tempinputbox" id="resultunit" placeholder="Unit" readonly>
 
                          </div>
 
 
-                         <div id="submitarea">
+                         <div class="resetarea">
 
-                              <button id="submit" class="sembody"> Calculate </button>
+                              <button type="reset" class="resetbtn" id="reset"> Reset </button>
 
                          </div>
 
 
-                    </div> -->
+                    </form>
 
 
                </div>
+               
 
           </div>
 
