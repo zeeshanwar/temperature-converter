@@ -40,26 +40,54 @@
                          <div class="tempinputarea">
 
                               <div class="tempdegree">
-                                   <div class="temptitle">
+                                   <div class="temptitle" id="toptitle">
                                         Degrees
                                    </div>
-                                   <input class="tempinputbox" id="tempinput">
+                                   <input class="tempinputbox" id="tempinput" autocomplete="off" required>
                               </div>
 
                               <div class="tempunit">
-                                   <div class="temptitle">
-                                        Unit
-                                   </div>
-                                   <div id="unitbox">
-                                        <div class="unitoptions">
-                                             <input type="radio" name="tempreature-unit" id="tempcelcius"
-                                                  class="tempradio" value="Celcius"> °C &nbsp;
+
+                                   <div class="tempunitbox" id="tempfrom">
+                                        <div class="temptitle">
+                                             From
                                         </div>
-                                        <div class="unitoptions">
-                                             <input type="radio" name="tempreature-unit" id="tempfarenheit"
-                                                  class="tempradio" value="Farenheit"> °F &nbsp;
+                                        <div class="unitbox">
+                                             <div class="unitoptions">
+                                                  <input type="radio" name="tempreature-unit-input" id="inputcelcius"
+                                                       class="tempradio radioinput" value="°C"> °C &nbsp;
+                                             </div>
+                                             <div class="unitoptions">
+                                                  <input type="radio" name="tempreature-unit-input" id="inputfarenheit"
+                                                       class="tempradio radioinput" value="°F"> °F &nbsp;
+                                             </div>
+                                             <div class="unitoptions">
+                                                  <input type="radio" name="tempreature-unit-input" id="inputkelvin"
+                                                       class="tempradio radioinput" value="K"> K &nbsp;
+                                             </div>
                                         </div>
                                    </div>
+
+                                   <div class="tempunitbox" id="tempto">
+                                        <div class="temptitle">
+                                             To
+                                        </div>
+                                        <div class="unitbox">
+                                             <div class="unitoptions">
+                                                  <input type="radio" name="tempreature-unit-output" id="outputcelcius"
+                                                       class="tempradio radiooutput" value="Celcius"> °C &nbsp;
+                                             </div>
+                                             <div class="unitoptions">
+                                                  <input type="radio" name="tempreature-unit-output" id="outputfarenheit"
+                                                       class="tempradio radiooutput" value="Farenheit"> °F &nbsp;
+                                             </div>
+                                             <div class="unitoptions">
+                                                  <input type="radio" name="tempreature-unit-output" id="outputkelvin"
+                                                       class="tempradio radiooutput" value="Kelvin"> K &nbsp;
+                                             </div>
+                                        </div>
+                                   </div>
+
                               </div>
 
                          </div>
@@ -74,8 +102,10 @@
 
                               <input class="tempinputbox" id="result" placeholder="Result" readonly>
                               <input class="tempinputbox" id="resultunit" placeholder="Unit" readonly>
-
+                                 
                          </div>
+                         
+                         <input class="tempinputbox" id="fullresult" readonly>
 
 
                          <div class="resetarea">
@@ -89,7 +119,7 @@
 
 
                </div>
-               
+
 
           </div>
 
