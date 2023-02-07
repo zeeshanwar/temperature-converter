@@ -303,6 +303,19 @@ body {
 .resetbtn:hover {}
 
 
+@media screen and (max-width: 500px) {
+
+     .heading{
+          h1{
+               font-size: 28px;
+          }
+     }
+
+     .container{
+          zoom: 88%;
+     }
+}
+
 
 
 
