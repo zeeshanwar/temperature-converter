@@ -14,12 +14,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+
 body {
      /* background: teal; */
      background: linear-gradient(rgba(0, 0, 0, 0.5),
                rgba(0, 0, 0, 0.5),
           ),
-          url('images/milad-fakurian-E8Ufcyxz514-unsplash.jpg');
+          url('images/pawel-czerwinski-Nmeu6odqoNM-unsplash.jpg');
      background-size: cover;
      // background-blend-mode: soft-light;
      margin: 0;
@@ -75,6 +78,12 @@ body {
      font-family: 'Exo', sans-serif;
      background: lavender;
      background: rgb(230, 230, 250, 0.8);
+
+     background: linear-gradient(to top,
+      rgba(250, 208, 196, 0.77) 0%,
+      rgba(255, 209, 255, 0.77) 100%
+     );
+
      margin: 10px;
      // padding: 40px 10px 20px 10px;
      padding: 22px;
@@ -244,14 +253,16 @@ body {
 #fullresult{
      font-family: 'Kanit', sans-serif;
      font-family: 'Cairo', sans-serif;
-     
      font-family: 'Philosopher', sans-serif;
+     font-family: 'Julee', cursive;
      font-size: 20px;
      margin-top: 10px;
      border: none;
      text-align: center;
      cursor: auto;
      opacity: 0;
+     // overflow: auto;
+     width: -webkit-fill-available;
      transition: all 0.5s;
      // display: block;
 

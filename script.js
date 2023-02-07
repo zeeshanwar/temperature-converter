@@ -173,7 +173,7 @@ let fullresult = document.querySelector('#fullresult');
           console.log(temperature);
 
           fullresult.style.opacity = 1;
-          fullresult.value = `${temperature} ${inputuint} = ${res} ${unt}`;
+          fullresult.value = `${temperature} ${inputuint}  =  ${res} ${unt}`;
 
      }
 
