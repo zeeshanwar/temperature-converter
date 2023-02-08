@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Laila&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Laila:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
@@ -71,6 +70,7 @@ body {
 
 #toptitle {
   margin: 5px 5px 10px 5px;
+  font-weight: 600;
 }
 
 .tempdegree {
@@ -242,27 +242,4 @@ body {
   .container {
     zoom: 88%;
   }
-}
-/* .semnos{
-     border: 3px solid purple;
-}
-
-.subcontainer{
-     border: 6px solid dimgray;
-}
-
-#semscount{
-     border: 4px solid steelblue;
-}
-
-#semscontainer{
-     border: 5px solid hotpink;
-}
-
-#submitarea{
-     border: 4px solid green;
-}
-
-#reset{
-     border: 3px solid coral ;
-} *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

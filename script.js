@@ -1,9 +1,4 @@
 
-// let pagebody = document.querySelectorAll('.pagebody')[0];
-
-// let sembody = document.querySelectorAll('.sembody');
-
-
 let converterform = document.getElementById('converterform');
 
 let tempinput = document.getElementById('tempinput');
@@ -49,10 +44,10 @@ let fullresult = document.querySelector('#fullresult');
 // console.log(result);
 
 
-
 // tempinput.value = 20;
 
 // tempinput.addEventListener('change', numbercheck)
+
 
 
      function inputcheck() {
@@ -77,6 +72,7 @@ let fullresult = document.querySelector('#fullresult');
           }
      }
 
+
      function unitcheck(){
 
           for (let rbtn of radioinput) {
@@ -91,10 +87,15 @@ let fullresult = document.querySelector('#fullresult');
           }
      }
 
-     function resetform(){
 
-          converterform.reset();
+     function sameunits(){
+
+          alert("Same Units Selected. Please select different units and try again");
+          resetform();
+          // convertedresult = temperature;
+          // convertedunit = inputuint;
           // convertedresult = 0;
+
      }
 
 
@@ -157,14 +158,11 @@ let fullresult = document.querySelector('#fullresult');
      }
 
 
-     function sameunits(){
 
-          alert("Same Units Selected. Please select different units and try again");
-          // convertedresult = temperature;
-          // convertedunit = inputuint;
-          resetform();
+     function resetform(){
+
+          converterform.reset();
           // convertedresult = 0;
-
      }
 
 
@@ -186,8 +184,7 @@ submit.addEventListener('click', () => {
 
      unitcheck();
 
-     console.log('button clicked');
-
+     console.log('Covert Button Clicked');
 
 
      
@@ -233,11 +230,11 @@ submit.addEventListener('click', () => {
      
      else {
           alert("Please select the Units");
+          result.reset();
      }
      
-     
-     result.value = convertedresult.toFixed(1);
 
+     result.value = convertedresult.toFixed(1);
 
 
 })
