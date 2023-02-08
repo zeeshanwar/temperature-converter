@@ -1,6 +1,7 @@
 // let username = prompt("Enter your name");
 // console.log(username);
 
+
 let pagebody = document.querySelectorAll('.pagebody')[0];
 
 let semscount = document.getElementById('semscount');
