@@ -184,7 +184,7 @@ submit.addEventListener('click', () => {
 
      unitcheck();
 
-     console.log('Covert Button Clicked');
+     console.log('Convert Button Clicked');
 
 
      
